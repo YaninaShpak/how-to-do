@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  background-color: rgb(184, 247, 247);
+  place-items: center;
+}
+
+.wrapper {
+  position: relative;
+  place-self: center;
+  width: 95vmin;
+  background-color: #fff;
+  padding: 50px 40px 20px 40px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+input[type='range'] {
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.slider-track {
+  width: 100%;
+  height: 5px;
+  // background-color: #d5d5d5;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  appearance: none;
+  height: 5px;
+}
+
+input[type='range']::-moz-range-track {
+  appearance: none;
+  height: 5px;
+}
+
+input[type='range']::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: #006400;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -9px;
+  pointer-events: auto;
+}
+
+input[type='range']::-moz-range-thumb {
+  appearance: none;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: darkgreen;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+input[type='range']::-ms-thumb {
+  appearance: none;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: darkgreen;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+input[type='range']:active::-webkit-slider-thumb {
+  background-color: #fff;
+  border: 3px solid darkgreen;
+}
+
+.values {
+  background-color: darkgreen;
+  width: 32%;
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+
+.values::before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 15px solid darkgreen;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  margin: auto;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+
+}

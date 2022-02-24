@@ -1,0 +1,40 @@
+body {
+  outline: 2px dashed #c7e4ff;
+}
+
+main,
+header,
+footer {
+
+  outline: 1px solid #7fc1ff;
+}
+
+nav,
+section,
+article,
+aside {
+  outline: 2px solid #9779ec;
+}
+
+div {
+  outline: 1px solid rgb(233, 195, 69);
+}
+
+ul {
+  outline: 2px solid rgb(240, 146, 146);
+}
+
+li {
+  outline: 2px solid rgb(182, 206, 133);
+}
+
+/*h1,
+h2,
+h3 {
+  outline: 2px solid #ff994f;
+}*/
+
+/*p {
+  outline: 2px solid #f36dff;
+}*/
+

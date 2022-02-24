@@ -1,0 +1,192 @@
+@charset "UTF-8";
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+}
+
+.centered-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  color: aqua;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: violet;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.triangle-box-top {
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #ff4136;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-style: none;
+}
+
+.triangle-box-right {
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #0074d9;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-style: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+}
+
+.triangle-box-bottom {
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #2ecc40;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-style: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-style: none;
+}
+
+.triangle-box-left {
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  border-color: #b10dc9;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-style: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-style: none;
+}
+
+.squaire {
+  background-color: #1ea578;
+}
+
+.title {
+  font-size: 2.625rem;
+}
+
+/** Оформление чекбокса если импут обернут в лэйбл*/
+.user-checkbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.login-checkbox input[type=checkbox] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type=checkbox]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type=checkbox]:checked + .checkbox-indicator::before,
+.login-checkbox input[type=checkbox]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type=checkbox]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type=checkbox]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.restore {
+  position: relative;
+}
+.restore::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #384566;
+  border-radius: 50%;
+  background-color: #454545;
+  top: 0;
+  left: -30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

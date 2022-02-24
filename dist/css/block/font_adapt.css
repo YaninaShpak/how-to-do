@@ -1,0 +1,75 @@
+*,
+h1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: Roboto;
+  color: #fff;
+  font-size: 14px;
+}
+
+.header {
+  background-color: #1b1b1b;
+  padding: 30px;
+}
+
+.content {
+  padding: 30px;
+}
+
+h1 {
+  /* font-size: 40px; */
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(24px + 27.2 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  h1 {
+    font-size: calc(24px + 16 * (100vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(24px + 27.2 * (100vw - 320px) / 1280);
+  }
+}
+h2 {
+  font-weight: 900;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: calc(18px + 20.4 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  h2 {
+    font-size: calc(18px + 12 * (100vw / 1280));
+  }
+}
+
+p {
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  p {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1280));
+  }
+}
+@media (min-width: 767px) {
+  p {
+    font-size: calc(16px + 2 * (100vw / 1280));
+  }
+}
